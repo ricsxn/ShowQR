@@ -1,0 +1,1 @@
+rm dist/showqr && pyinstaller -s -c -F -p /Library/Python/2.7/site-packages -y showqr.py && cp /Users/Macbook/Documents/src/ShowQR/dist/showqr showQRpkg/Package_Root/usr/bin/showqr
