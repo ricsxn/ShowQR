@@ -3,10 +3,10 @@ from sys import stdin
 from qrcode.main import QRCode, make
 from qrcode.constants import *
 from qrcode import image
-import ImageFont
-import ImageDraw
+from PIL import ImageFont
+from PIL import ImageDraw
 
-VER="1.1"
+VER="1.2"
 SHOWTXT=True
 FONT='/Library/Fonts/Courier New.ttf'
 FONTSZ=12
