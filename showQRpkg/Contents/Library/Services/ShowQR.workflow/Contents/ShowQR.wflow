@@ -53,7 +53,7 @@
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<string>/Library/Automator/Run Shell Script.action</string>
 				<key>ActionName</key>
 				<string>Run Shell Script</string>
 				<key>ActionParameters</key>
@@ -174,7 +174,7 @@
 				<key>location</key>
 				<string>309.500000:395.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
