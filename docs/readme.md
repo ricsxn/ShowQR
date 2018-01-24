@@ -1,1 +1,1 @@
-This is the docs directory
+# ShowQR page
