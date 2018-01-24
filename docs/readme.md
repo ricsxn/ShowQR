@@ -13,6 +13,9 @@ Once installed the utilty; select any text from any application and use one of t
  - Right click on top of selected text and select in the contextual menu: Services/ShowQR.
 ShowQR generates a temporary file and triggers the Preview.app to show the generated QR code. The temporary file is already removed from the filesystem when is is displayed by the Preview application.
 
+![][usecase]
+
 
 [donate]: http://ricsxn.duckdns.org/donate.html
 [package]: https://github.com/ricsxn/ShowQR/blob/master/ShowQR.pkg
+[usecase]: https://github.com/ricsxn/ShowQR/raw/master/showQRpkg/Resources/ShowQR_use.jpg
