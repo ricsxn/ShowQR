@@ -1,1 +1,1 @@
-rm -f dist/showqr && pyinstaller -s -c -F -p /Library/Python/2.7/site-packages -y showqr.py
+rm -f dist/showqr && pyinstaller -s -c -F -p /Library/Python/2.7/site-packages -p ./venv/lib/python2.7/site-packages -y showqr.py
