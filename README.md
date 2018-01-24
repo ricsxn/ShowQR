@@ -1,4 +1,4 @@
-# <img src="https://github.com/ricsxn/ShowQR/blob/master/showQRpkg/Contents/Library/Services/ShowQR.workflow/Contents/QuickLook/Thumbnail.png" width="100" />ShowQR
+# [ShowQR](http://ricsxn.github.io/ShowQR/)
 Show QR code from any selected text on your Mac
 
 How shall I send text/URLs from my Mac to my Mobile in a fast and confortable way?
