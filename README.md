@@ -9,7 +9,7 @@ You can use this litte service for free or if you like you can leave a donation 
 ## Structure
 ShowQR service consists of two components, a simple python script that triggers Preview.app containing the generated QR code taken from the stadard input, while the second component consists of an automator script that setup the system-wide service.
 
-## ShowQR.pkg
+## [ShowQR.pkg][package]
 The repository contains the ShowQR.pkg file that allows to install directly the utility into your Mac.
 In earlier versions of ShowQR the package has been built using PackageManager. Since this utility has been deprecated the package is now created by Packages which configuration file still uses paths used by the previous tool.
 
@@ -19,5 +19,8 @@ Once installed the utilty; select any text from any application and use one of t
  - Right click on top of selected text and select in the contextual menu: Services/ShowQR.
 ShowQR generates a temporary file and triggers the Preview.app to show the generated QR code. The temporary file is already removed from the filesystem when is is displayed by the Preview application.
 
+![][usecase]
  
 [donate]: http://ricsxn.duckdns.org/donate.html
+[package]: https://github.com/ricsxn/ShowQR/blob/master/ShowQR.pkg
+[usecase]: https://github.com/ricsxn/ShowQR/raw/master/showQRpkg/Resources/ShowQR_use.jpg
