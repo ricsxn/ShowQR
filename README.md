@@ -1,10 +1,9 @@
 # [ShowQR](http://ricsxn.github.io/ShowQR/)
-Show QR code from any selected text on your Mac
-
-How shall I send text/URLs from my Mac to my Mobile in a fast and confortable way?
-The ShowQR utility gratfully solves that!
-Once installed you can select any text, right click on it and choose the contextual menu voice: 'services/ShowQR'. After a few seconds the corresponding QR will be shown.
-You can use this litte service for free or if you like you can leave a donation by clicking [here][donate]
+Show QR code from any selected text on your Mac</br>
+How shall I send text/URLs from my Mac to my Mobile in a fast and confortable way?<br/>
+The ShowQR utility gratfully solves that!</br>
+Once installed you can select any text from any application and with few mouse clicks the corresponding QR code containing that text will be promptly shown.</br>
+You can use this little service for free or if you like this tool you can leave a donation by clicking [here][donate]
 
 ## Structure
 ShowQR service consists of two components, a simple python script that triggers Preview.app containing the generated QR code taken from the stadard input, while the second component consists of an automator script that setup the system-wide service.
