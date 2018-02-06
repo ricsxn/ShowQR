@@ -1,6 +1,6 @@
 # What is
 How shall I send text/URLs from my Mac to my Mobile in a fast and confortable way?<br/>
-The ShowQR utility gratfully solves that!</br>
+The ShowQR utility gratfully solves that!<br/>
 Once installed you can select any text from any application and with few mouse clicks the corresponding QR code containing that text will be promptly shown.</br>
 You can use this little service for free or if you like this tool you can leave a donation by clicking [here][donate]
 
