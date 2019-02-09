@@ -18,6 +18,8 @@ Once installed the utilty; select any text from any application and use one of t
  - Right click on top of selected text and select in the contextual menu: Services/ShowQR.
 ShowQR generates a temporary file and triggers the Preview.app to show the generated QR code. The temporary file is already removed from the filesystem when is is displayed by the Preview application.
 
+![][usecase]
+
 ## Build
 The build process requires the following steps
 
@@ -45,8 +47,6 @@ $ ./mkshowqr
 ### Package creation
 The package project file `showQRPackages.pkgproj`, already contains the necessary configuration to create the ShowQR.pkg file, however in order to open this project file the [Packages][packages] application must be installed first. Once opened the package project file, just select the menu Build/Build.
 If everithing is fine, the new ShowQR.pkg file will be generated 
-
-![][usecase]
 
 [brew]: https://brew.sh/index_it
 [packages]: http://s.sudre.free.fr/Software/Packages/about.html
