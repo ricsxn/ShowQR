@@ -287,7 +287,7 @@
 									<key>PATH_TYPE</key>
 									<integer>0</integer>
 									<key>PERMISSIONS</key>
-									<integer>493</integer>
+									<integer>1005</integer>
 									<key>TYPE</key>
 									<integer>1</integer>
 									<key>UID</key>
@@ -738,7 +738,7 @@
 				<key>TREAT_MISSING_FILES_AS_WARNING</key>
 				<false/>
 				<key>VERSION</key>
-				<integer>4</integer>
+				<integer>5</integer>
 			</dict>
 			<key>PACKAGE_SCRIPTS</key>
 			<dict>
@@ -773,6 +773,8 @@
 				<false/>
 				<key>PAYLOAD_SIZE</key>
 				<integer>-1</integer>
+				<key>REFERENCE_PATH</key>
+				<string></string>
 				<key>RELOCATABLE</key>
 				<false/>
 				<key>USE_HFS+_COMPRESSION</key>
@@ -797,7 +799,17 @@
 		<key>PROJECT_PRESENTATION</key>
 		<dict>
 			<key>BACKGROUND</key>
-			<dict/>
+			<dict>
+				<key>APPAREANCES</key>
+				<dict>
+					<key>DARK_AQUA</key>
+					<dict/>
+					<key>LIGHT_AQUA</key>
+					<dict/>
+				</dict>
+				<key>SHARED_SETTINGS_FOR_ALL_APPAREANCES</key>
+				<true/>
+			</dict>
 			<key>INSTALLATION TYPE</key>
 			<dict>
 				<key>HIERARCHIES</key>
