@@ -10,13 +10,12 @@ You can install this software downloading its package by clicking [here][package
 ## Usage
 Once installed the utilty; select any text from any application and perform one of the following actions:
  - Go in the current app name menu and select: Services/ShowQR item
- - Right click on top of selected text and select in the contextual menu: Services/ShowQR.
+ - Right click on top of selected text and select in the contextual menu: ShowQR.
 
 ShowQR will trigger the Preview.app to show the generated QR code
 
 ![][usecase]
 
-
 [donate]: http://ricsxn.duckdns.org/donate.html
-[package]: https://github.com/ricsxn/ShowQR/blob/master/ShowQR.pkg
-[usecase]: https://github.com/ricsxn/ShowQR/raw/master/showQRpkg/Resources/ShowQR_use.jpg
+[package]: https://github.com/ricsxn/ShowQR/blob/build/ShowQR.pkg
+[usecase]: https://github.com/ricsxn/ShowQR/raw/master/docs/ShowQR_use.jpg
