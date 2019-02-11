@@ -1,4 +1,6 @@
 # [ShowQR](http://ricsxn.github.io/ShowQR/)
+[![Build Status](https://travis-ci.org/ricsxn/ShowQR.svg?branch=master)](https://travis-ci.org/ricsxn/ShowQR)
+[![License](https://img.shields.io/github/license/FutureGateway/geAPIServer.svg?style?flat)](http://www.apache.org/licenses/LICENSE-2.0.txt)
 Show QR code from any selected text on your Mac</br>
 How shall I send text/URLs from my Mac to my Mobile in a fast and confortable way?<br/>
 The ShowQR utility gratfully solves that!</br>
