@@ -1,7 +1,6 @@
 os: osx
 
 before_install:
-  - easy_isntall pip
   - pip install virtualenv
 
 script:
