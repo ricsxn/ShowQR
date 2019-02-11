@@ -1,7 +1,6 @@
 os: osx
 
 before_install:
-  - brew install python@2
   - easy_isntall pip
   - pip install virtualenv
 
