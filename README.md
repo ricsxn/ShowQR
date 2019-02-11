@@ -1,6 +1,7 @@
-# [ShowQR](http://ricsxn.github.io/ShowQR/)
 [![Build Status](https://travis-ci.org/ricsxn/ShowQR.svg?branch=master)](https://travis-ci.org/ricsxn/ShowQR)
 [![License](https://img.shields.io/github/license/FutureGateway/geAPIServer.svg?style?flat)](http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+# [ShowQR](http://ricsxn.github.io/ShowQR/)
 Show QR code from any selected text on your Mac</br>
 How shall I send text/URLs from my Mac to my Mobile in a fast and confortable way?<br/>
 The ShowQR utility gratfully solves that!</br>
@@ -20,7 +21,7 @@ Once installed the utilty; select any text from any application and use one of t
  - Right click on top of selected text and select in the contextual menu: ShowQR.
 ShowQR generates a temporary file and triggers the Preview.app to show the generated QR code. The temporary file is already removed from the filesystem when it is displayed by the Preview application.
 
-![][usecase]
+->![][usecase]<-
 
 ## Build
 The build process requires the following steps

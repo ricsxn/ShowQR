@@ -14,7 +14,7 @@ Once installed the utilty; select any text from any application and perform one 
 
 ShowQR will trigger the Preview.app to show the generated QR code
 
-![][usecase]
+->![][usecase]<-
 
 [donate]: http://ricsxn.duckdns.org/donate.html
 [package]: https://github.com/ricsxn/ShowQR/blob/build/ShowQR.pkg
