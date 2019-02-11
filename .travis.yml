@@ -6,8 +6,9 @@ python:
   - "2.7"
 
 before_install:
-  - pip install --user --upgrade pip virtualenv
-  - virtualenv -p python$PYTHON venv
+  - brew install python@2
+  - easy_isntall pip
+  - pip install virtualenv
 
 script:
   - make showqr
