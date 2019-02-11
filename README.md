@@ -23,7 +23,7 @@ Once installed the utilty; select any text from any application and use one of t
  - Right click on top of selected text and select in the contextual menu: ShowQR.
 ShowQR generates a temporary file and triggers the Preview.app to show the generated QR code. The temporary file is already removed from the filesystem when it is displayed by the Preview application.
 
-->![][usecase]<-
+![][usecase]
 
 ## Build
 The build process requires the following steps
