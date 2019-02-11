@@ -1,7 +1,5 @@
 os: osx
 
-language: python
-
 before_install:
   - brew install python@2
   - easy_isntall pip
