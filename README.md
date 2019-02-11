@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/ricsxn/ShowQR.svg?branch=master)](https://travis-ci.org/ricsxn/ShowQR)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ricsxn?locale.x=it_IT)
+
 
 # [ShowQR](http://ricsxn.github.io/ShowQR/)
 Show QR code from any selected text on your Mac</br>
@@ -54,6 +56,6 @@ If everithing is fine, the new ShowQR.pkg file will be generated successfully
 
 [brew]: https://brew.sh/index_it
 [packages]: http://s.sudre.free.fr/Software/Packages/about.html
-[donate]: http://ricsxn.duckdns.org/donate.html
+[donate]: https://paypal.me/ricsxn?locale.x=it_IT
 [package]: https://github.com/ricsxn/ShowQR/blob/master/build/ShowQR.pkg
 [usecase]: https://github.com/ricsxn/ShowQR/raw/master/docs/ShowQR_use.jpg
