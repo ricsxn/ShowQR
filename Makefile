@@ -42,7 +42,7 @@ loadenv: requirements
 
 $(SHOWQR_ICNS): $(SHOWQR_ICNS_RES)
 	@echo "Making icon"
-	@iconutil -c icns $(SHOWQR_ICNS)
+	@iconutil -c icns $(SHOWQR_ICNS_RES)
 
 showqr: loadenv $(SHOWQR_ICNS) $(SHOWQR_SRC)
 	@echo "Generating ShowQR executable"
