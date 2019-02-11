@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/ricsxn/ShowQR.svg?branch=master)](https://travis-ci.org/ricsxn/ShowQR)
-[![License](https://img.shields.io/github/license/FutureGateway/geAPIServer.svg?style?flat)](http://www.apache.org/licenses/LICENSE-2.0.txt)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # [ShowQR](http://ricsxn.github.io/ShowQR/)
 Show QR code from any selected text on your Mac</br>
