@@ -27,7 +27,7 @@ ShowQR generates a temporary file and triggers the Preview.app to show the gener
 
 ### Notes
 It is possible that Services contextual menu does not contains immediately ShowQR item. In this case try to restart Finder or logout/login again.
-Some applications may override the system contextual menu, in these case use the application name menu voice, beside the apple icon and select Services; ShowQR shoul be listed inside the submenu.
+Some applications may override the system contextual menu, in these case use the application name menu voice, beside the apple icon and select the voice: Services; ShowQR should be listed inside the submenu.
 
 ## Build
 The build process requires the following steps
