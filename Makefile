@@ -68,7 +68,9 @@ showqr: $(SHOWQR_FILE)
 
 test: showqr
 	@echo "Testing ShowQR" &&\
-         echo "Testing ShowQR" | $(SHOWQR_FILE)
+         echo "Testing ShowQR" | $(SHOWQR_FILE) -f &&\
+         [ -f ShowQR.png ] &&\
+         echo "QR code successfully created"
 
 install: showqr $(SHOWQR_WORKFLOW)
 	@echo "Installing ShowQR" &&\

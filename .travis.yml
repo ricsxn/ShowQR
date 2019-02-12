@@ -1,4 +1,4 @@
 os: osx
 
 script:
-  - make showqr
+  - make test
