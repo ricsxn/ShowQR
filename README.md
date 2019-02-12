@@ -3,8 +3,8 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ricsxn?locale.x=it_IT)
 
 
-# [ShowQR](http://ricsxn.github.io/ShowQR/) [Download][package]
-Show QR code from any selected text on your Mac</br>
+# [ShowQR](http://ricsxn.github.io/ShowQR/)
+Show the QR code from any selected text on your Mac ([Download][package])</br>
 How shall I send text/URLs from my Mac to my Mobile in a fast and confortable way?<br/>
 The ShowQR utility gratfully solves that!</br>
 Once installed you can select any text from any application and with few mouse clicks the corresponding QR code containing that text will be promptly shown.</br>
