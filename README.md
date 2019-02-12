@@ -3,7 +3,7 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ricsxn?locale.x=it_IT)
 
 
-# [ShowQR](http://ricsxn.github.io/ShowQR/)
+# [ShowQR](http://ricsxn.github.io/ShowQR/) [Download][package]
 Show QR code from any selected text on your Mac</br>
 How shall I send text/URLs from my Mac to my Mobile in a fast and confortable way?<br/>
 The ShowQR utility gratfully solves that!</br>
@@ -13,7 +13,7 @@ You can use this little service for free or if you like this tool you can leave 
 ## Structure
 ShowQR service consists of two components, a simple python script that triggers Preview.app containing the generated QR code taken from the stadard input, while the second component consists of an automator script that setup the system-wide service.
 
-## [ShowQR.pkg][package]
+## Installation
 The repository contains the [ShowQR.pkg][package] file that allows to install directly the utility into your Mac.
 Altough the package should work for any MacOS X version, it is possible that the showQR application will not work due to specific Mac OS architecture differencies. In this case, it is suggested to build the code from sources as reported in the build section.
 
