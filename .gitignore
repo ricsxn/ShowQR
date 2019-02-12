@@ -1,4 +1,6 @@
 .DS_Store
+/Pipfile
+/Pipfile.lock
 /build/showqr
 /dist
 /venv

@@ -17,7 +17,7 @@ usage:
          echo "    make install - Install ShowQR (brew)"
 
 clean:
-	@rm -rf build dist
+	@rm -rf build dist *.spec *.png
 
 requisites:
 	@echo "Checking requisites" &&\
@@ -37,6 +37,8 @@ loadenv: requisites $(PIP_FILE)
 
 $(PIP_FILE): $(PIP_REQ)
 	@echo "Loading environment with pipenv" &&\
+         export LC_ALL=en_US.UTF-8 &&\
+         export LANG=en_US.UTF-8 &&\
          PYBASE=`python -m site --user-base` &&\
          $$PYBASE/bin/pipenv install -r $(PIP_REQ)
 
@@ -47,8 +49,10 @@ $(SHOWQR_ICNS): $(SHOWQR_ICNS_RES)
 $(SHOWQR_FILE): loadenv $(SHOWQR_ICNS) $(SHOWQR_SRC)
 	@echo "Generating ShowQR executable"
 	@rm -rf dist
-	@PYSITE=`python -m site --user-site` &&\
-     PYBASE=`python -m site --user-base` &&\
+	@export LC_ALL=en_US.UTF-8 &&\
+         export LANG=en_US.UTF-8 &&\
+         PYSITE=`python -m site --user-site` &&\
+         PYBASE=`python -m site --user-base` &&\
          $$PYBASE/bin/pipenv run pyinstaller\
                      --onefile\
                      --icon $(SHOWQR_ICNS)\

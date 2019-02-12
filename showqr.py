@@ -6,7 +6,7 @@ from qrcode import image
 from PIL import ImageFont
 from PIL import ImageDraw
 
-VER="1.2"
+VER="1.3"
 SHOWTXT=True
 FONT='/Library/Fonts/Courier New.ttf'
 FONTSZ=12
