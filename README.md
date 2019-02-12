@@ -52,7 +52,7 @@ Usage:
     make install - Install ShowQR (brew)
 ```
 
-The make install has been thought to integrate ShowQR in homebrew. In this case the ShowQR utility works only at user level. The installation made with the package will activate ShowQR for all users. This change can be easily modified changin paths inside the `install` Makefile rule.
+The make install has been thought to integrate ShowQR in homebrew. In this case the ShowQR utility works only at user level. The installation made with the package will activate ShowQR for all users. This change can be easily modified changing the ShowQR.workflow destination path to `/Library/Services/` inside the `install` Makefile rule.
 
 ### Package creation
 The package project file `showQRPackages.pkgproj`, already contains the necessary configuration to create the [ShowQR.pkg][package] file, however in order to open this project file the [Packages][packages] application must be installed first. Once opened the package project file, just select the menu Build/Build.
