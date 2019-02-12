@@ -28,14 +28,12 @@ ShowQR generates a temporary file and triggers the Preview.app to show the gener
 ## Build
 The build process requires the following steps
 
-### Python, pip, virtualenv and requirements
-ShowQR core component is a python2.7 script, the standard python interpreter provided by Mac OS may create problems to setup: pip and virtualenv.
-The following commands use the [brew][brew] package, to setup python.
+### Python, pip, and requirements
+ShowQR core component is a python2.7 script, the standard python interpreter provided by Mac OS may create problems, in such a case, the following commands use the [brew][brew] package, to setup python.
 
 ```bash
 $ brew install python@2
 $ easy_install pip
-$ pip install virtualenv
 ```
 
 ### ShowQR compilation
@@ -47,8 +45,10 @@ Usage:
     make clean   - Cleanup project folder
     make showqr  - Generate the showqr application
     make test    - Test the showqr executable
-    make install - Install ShowQR
+    make install - Install ShowQR (brew)
 ```
+
+The make install has been thought to integrate ShowQR in homebrew. In this case the ShowQR utility works only at user level. The installation made with the package will activate ShowQR for all users. This change can be easily modified changin paths inside the `install` Makefile rule.
 
 ### Package creation
 The package project file `showQRPackages.pkgproj`, already contains the necessary configuration to create the [ShowQR.pkg][package] file, however in order to open this project file the [Packages][packages] application must be installed first. Once opened the package project file, just select the menu Build/Build.
