@@ -32,7 +32,7 @@ requisites:
          [ "$$PYVER" == "2.7" ] &&\
          echo "Requisites satisfied"
 
-loadenv: $(PIP_FILE)
+loadenv: requisites $(PIP_FILE)
 	@echo "Environment loaded successfully"
 
 $(PIP_FILE): $(PIP_REQ)
@@ -78,3 +78,4 @@ install: showqr $(SHOWQR_WORKFLOW)
          echo "Installation successfully accomplished"
 
 all: clean showqr install
+

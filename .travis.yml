@@ -1,7 +1,4 @@
 os: osx
 
-before_install:
-  - pip install virtualenv
-
 script:
   - make showqr
