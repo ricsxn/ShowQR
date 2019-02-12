@@ -23,10 +23,7 @@ requisites:
 	@echo "Checking requisites" &&\
          which python &&\
          which pip &&\
-         which pipenv || pip install --user pipenv
-	@PYBASE=`python -m site --user-base` &&\
-         echo "Python base directory: $$PYBASE" &&\
-         [ -f $$PYBASE/bin/pipenv ] &&\
+         which pipenv &&\
          PYVER=`python --version 2>&1 | awk '{ print substr($$2,1,3)}'` &&\
          echo "Python version: $$PYVER" &&\
          [ "$$PYVER" == "2.7" ] &&\
@@ -39,8 +36,7 @@ $(PIP_FILE): $(PIP_REQ)
 	@echo "Loading environment with pipenv" &&\
          export LC_ALL=en_US.UTF-8 &&\
          export LANG=en_US.UTF-8 &&\
-         PYBASE=`python -m site --user-base` &&\
-         $$PYBASE/bin/pipenv install -r $(PIP_REQ)
+         pipenv --python=2.7 install -r $(PIP_REQ)
 
 $(SHOWQR_ICNS): $(SHOWQR_ICNS_RES)
 	@echo "Making icon"
@@ -51,15 +47,13 @@ $(SHOWQR_FILE): loadenv $(SHOWQR_ICNS) $(SHOWQR_SRC)
 	@rm -rf dist
 	@export LC_ALL=en_US.UTF-8 &&\
          export LANG=en_US.UTF-8 &&\
-         PYSITE=`python -m site --user-site` &&\
-         PYBASE=`python -m site --user-base` &&\
-         $$PYBASE/bin/pipenv run pyinstaller\
+         PYSITE=`python2 -m site --user-site` &&\
+         pipenv run pyinstaller\
                      --onefile\
                      --icon $(SHOWQR_ICNS)\
                      -s\
                      -c\
                      -F\
-                     -p $$PYSITE\
                      -y\
                      $(SHOWQR_SRC)
 	@[ -f $(SHOWQR_FILE) ] &&\

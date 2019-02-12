@@ -1,4 +1,7 @@
 os: osx
 
+install:
+  - pip install pipenv
+
 script:
   - make test
