@@ -1,7 +1,6 @@
 #
 # ShowQR Makefile
 #
-PYVER=3.8
 PIP_FILE=Pipfile
 PIP_REQ=requirements.txt
 SHOWQR_SRC=showqr.py
@@ -54,7 +53,7 @@ $(SHOWQR_FILE): $(SHOWQR_ICNS) $(SHOWQR_SRC)
            echo "Successfully created" ||\
            echo "Unsuccessfully created"
 
-showqr: $(SHOWQR_FILE)
+showqr: $(SHOWQR_FILE) $(PIP_FILE)
 	@[ -f $(SHOWQR_FILE) ] &&\
            echo "ShowQR binary file at: " $(SHOWQR_FILE)
 

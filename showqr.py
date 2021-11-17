@@ -10,7 +10,7 @@ VER="1.4"
 SHOWTXT=True
 FONT='/Library/Fonts/Courier New.ttf'
 FONTSZ=12
-BANNER='http://ricsxn.duckdns.org/donate.html'
+BANNER='https://www.paypal.com/paypalme/ricsxn'
 HEADER='ShowQR v%s' % VER
 
 def main():

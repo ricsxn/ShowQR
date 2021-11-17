@@ -17,6 +17,12 @@ ShowQR service consists of two components, a simple python script that triggers 
 The repository contains the [ShowQR.pkg][package] file that allows to install directly the utility into your Mac.
 Altough the package should work for any MacOS X version, it is possible that the showQR application will not work due to specific Mac OS architecture differencies. In this case, it is suggested to build the code from sources as reported in the build section.
 At the time of your reading the code supports MacOS BigSur.
+To compile your own showqr, your system must have:
+
+. brew
+. XCode command line tools
+. python3
+. pipenv (brew)
 
 ## Usage
 Once installed the utilty; select any text from any application and use one of the following:

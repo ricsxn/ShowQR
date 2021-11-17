@@ -16,6 +16,6 @@ ShowQR will trigger the Preview.app to show the generated QR code
 
 ![][usecase]
 
-[donate]: https://paypal.me/ricsxn?locale.x=it_IT
+[donate]: https://www.paypal.com/paypalme/ricsxn 
 [package]: https://github.com/ricsxn/ShowQR/blob/build/ShowQR.pkg
 [usecase]: https://github.com/ricsxn/ShowQR/raw/master/docs/ShowQR_use.jpg
