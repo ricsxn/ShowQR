@@ -1,6 +1,7 @@
 #
 # ShowQR Makefile
 #
+PYVER=3.8
 PIP_FILE=Pipfile
 PIP_REQ=requirements.txt
 SHOWQR_SRC=showqr.py
@@ -20,30 +21,17 @@ usage:
 clean:
 	@rm -rf build dist *.spec *.png
 
-requisites:
-	@echo "Checking requisites" &&\
-         which python &&\
-         which pip &&\
-         which pipenv &&\
-         PYVER=`python --version 2>&1 | awk '{ print substr($$2,1,3)}'` &&\
-         echo "Python version: $$PYVER" &&\
-         [ "$$PYVER" == "2.7" ] &&\
-         echo "Requisites satisfied"
-
-loadenv: requisites $(PIP_FILE)
-	@echo "Environment loaded successfully"
-
 $(PIP_FILE): $(PIP_REQ)
 	@echo "Loading environment with pipenv" &&\
          export LC_ALL=en_US.UTF-8 &&\
          export LANG=en_US.UTF-8 &&\
-         pipenv --python=2.7 install -r $(PIP_REQ)
+         pipenv --python=$(PYVER) install -r $(PIP_REQ)
 
 $(SHOWQR_ICNS): $(SHOWQR_ICNS_RES)
 	@echo "Making icon"
 	@iconutil -c icns $(SHOWQR_ICNS_RES)
 
-$(SHOWQR_FILE): loadenv $(SHOWQR_ICNS) $(SHOWQR_SRC)
+$(SHOWQR_FILE): $(SHOWQR_ICNS) $(SHOWQR_SRC)
 	@echo "Generating ShowQR executable"
 	@rm -rf dist
 	@export LC_ALL=en_US.UTF-8 

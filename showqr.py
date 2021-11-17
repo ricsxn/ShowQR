@@ -6,7 +6,7 @@ from qrcode import image
 from PIL import ImageFont
 from PIL import ImageDraw
 
-VER="1.3"
+VER="1.4"
 SHOWTXT=True
 FONT='/Library/Fonts/Courier New.ttf'
 FONTSZ=12
@@ -21,8 +21,8 @@ def main():
 	im = qr.make_image()
 	if SHOWTXT is True:
 		font = ImageFont.truetype(FONT, FONTSZ, encoding='unic')
-		text = BANNER.decode('utf-8')
-		head = HEADER.decode('utf-8')
+		text = BANNER
+		head = HEADER
 		(txt_width, txt_height) = font.getsize(text)
 		(hdr_width, hdr_height) = font.getsize(head)
 		(qr_width,qr_height) = im.size
