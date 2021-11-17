@@ -4,6 +4,7 @@
 PIP_FILE=Pipfile
 PIP_REQ=requirements.txt
 SHOWQR_SRC=showqr.py
+SHOWQR_SPEC=showqr.spec
 SHOWQR_FILE=dist/showqr
 SHOWQR_ICNS_RES=ShowQR.iconset
 SHOWQR_ICNS=showqr.icns
@@ -45,17 +46,22 @@ $(SHOWQR_ICNS): $(SHOWQR_ICNS_RES)
 $(SHOWQR_FILE): loadenv $(SHOWQR_ICNS) $(SHOWQR_SRC)
 	@echo "Generating ShowQR executable"
 	@rm -rf dist
-	@export LC_ALL=en_US.UTF-8 &&\
-         export LANG=en_US.UTF-8 &&\
-         PYSITE=`python2 -m site --user-site` &&\
-         pipenv run pyinstaller\
+	@export LC_ALL=en_US.UTF-8 
+	@export LANG=en_US.UTF-8
+	pipenv run pyinstaller\
                      --onefile\
                      --icon $(SHOWQR_ICNS)\
                      -s\
                      -c\
                      -F\
                      -y\
+                     --exclude-module tcl\
+                     --exclude-module tk\
+                     --exclude-module _tkinter\
+                     --exclude-module tkinter\
+                     --exclude-module Tkinter\
                      $(SHOWQR_SRC)
+	@mkdir -p dist
 	@[ -f $(SHOWQR_FILE) ] &&\
            echo "Successfully created" ||\
            echo "Unsuccessfully created"
@@ -71,9 +77,9 @@ test: showqr
          echo "QR code successfully created"
 
 install: showqr $(SHOWQR_WORKFLOW)
-	@echo "Installing ShowQR" &&\
-         mkdir -p $$HOMEBREW_FORMULA_PREFIX/bin &&\
-	 cp $(SHOWQR_FILE) $$HOMEBREW_FORMULA_PREFIX/bin/ &&\
+	@echo "Installing ShowQR"
+	@BREW_PFX=`brew --prefix` &&\
+	 sudo cp $(SHOWQR_FILE) $$BREW_PFX/bin &&\
 	 cp -r $(SHOWQR_WORKFLOW) ~/Library/Services/ &&\
          echo "Installation successfully accomplished"
 
