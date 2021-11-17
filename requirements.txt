@@ -14,7 +14,7 @@ macholib==1.13
 modulegraph==0.17
 pathlib2==2.3.6
 pefile==2018.8.8
-Pillow==6.2.2
+Pillow==8.3.2
 pipenv==2021.5.29
 platformdirs==2.0.2
 PyInstaller==3.6
