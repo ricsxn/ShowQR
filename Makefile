@@ -15,10 +15,19 @@ usage:
          echo "    make clean   - Cleanup project folder" &&\
          echo "    make showqr  - Generate the showqr application" &&\
          echo "    make test    - Test the showqr executable" &&\
-         echo "    make install - Install ShowQR (brew)"
+         echo "    make install - Install ShowQR (brew)" &&\
+         echo "    make venv    - Create the python virtualenv"
 
 clean:
 	@rm -rf build dist *.spec *.png
+
+venv: requirements.txt
+	@[ ! -d venv ] &&\
+        mkdir -p venv || echo venv "venv dir already exists" 
+	@python3 -m venv venv &&\
+        . venv/bin/activate &&\
+        pip install --upgrade pip &&\
+        pip install -r requirements.txt 
 
 $(PIP_FILE): $(PIP_REQ)
 	@echo "Loading environment with pipenv" &&\
