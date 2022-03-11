@@ -4,7 +4,7 @@ certifi==2021.10.8
 distlib==0.3.3
 filelock==3.4.0
 macholib==1.15.2
-Pillow==8.4.0
+Pillow==9.0.1
 pipenv==2021.11.15
 platformdirs==2.4.0
 pyinstaller==4.7
