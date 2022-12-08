@@ -1,6 +1,6 @@
 altgraph==0.17.2
 backports.entry-points-selectable==1.1.1
-certifi==2021.10.8
+certifi==2022.12.7
 distlib==0.3.3
 filelock==3.4.0
 macholib==1.15.2
